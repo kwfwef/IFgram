@@ -1,0 +1,22 @@
+<header [style.background-color]="tema" >
+  <i class="fas fa-bars" (click)="showhidden()"></i>
+  <h1>IFgram</h1>
+  <div class="user-infor">
+    <span>Nome Aluno</span>
+    <img src="assets/images/ifrn.png">
+  </div>
+</header>
+<nav *ngIf="showMenu">
+    <ul>
+      <li [routerLink]="['']"><i class="fas fa-user-alt"></i>  Alunos</li>
+      <li [routerLink]="['/professores']"><i class="fas fa-chalkboard-teacher"></i>  Professores</li>
+      <li><i class="fas fa-question-circle"></i>  Consulta achados e perdidos</li>
+      <li><i class="fas fa-plus-square"></i>  Cadastra perda de objeto</li>
+      <li><i class="fab fa-angellist"></i>  Festa no campus IFRN</li>
+      <li (click)="alteraTema()"><i class="fas fa-sync"></i> Altera tema</li>
+    </ul>
+</nav>
+
+ <div class="showCase" [style.padding-left] ="!showMenu ? '10px' : '240px'">
+    <router-outlet></router-outlet>
+</div>

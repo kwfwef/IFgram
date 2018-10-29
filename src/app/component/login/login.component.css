@@ -1,0 +1,42 @@
+
+.container-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('src/assets/images/ifrn.png');
+    background-size: cover;
+    background-position:center bottom;
+    background-repeat: no-repeat;
+}
+
+input {
+    margin-top: 15px;
+    padding: 10px 20px;
+    max-width: 230px;
+    width: 100%;
+}
+
+.action {
+    margin-top: 15px;
+    
+}
+
+.action button {
+    min-width: 120px;
+    padding: 15px 20px;
+    margin: 5px;
+}
+
+.logar {
+    background-color: #00ad4c;
+    color: #f3f3f3;
+    border: none;
+}
+
+.cadastre {
+    background-color: #2292c9;
+    color: #f3f3f3;
+    border: none;
+}
